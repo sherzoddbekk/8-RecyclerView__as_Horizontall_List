@@ -29,6 +29,7 @@ Context context;
     private  void initView(){
         recyclerView = findViewById(R.id.recycleViewMain);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
+            //LinearLayoutManager bu gorizontal holatni chiqarish uchun kerak bu jarayon.
     }
     private void refreshAdapter(List<Member> members){
         CustomAdapter adapter = new CustomAdapter(members,context);
